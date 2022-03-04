@@ -22,11 +22,6 @@
       "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
       "value": "https://example.com/"
     },
-    "MUST_JOIN": {
-      "description": "Add username/id of a channel/group",
-      "required": false,
-      "value": "HeroOfficialBots"
-    }, 
     "APP_TITLE": {
       "description": "specify a custom app title",
       "required": false
