@@ -6,4 +6,3 @@ beautifulsoup4==4.9.1
 
 python-dotenv>=0.10
 
-git+https://github.com/pyrogram/pyrogram.git
