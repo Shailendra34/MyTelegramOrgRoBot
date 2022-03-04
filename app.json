@@ -26,7 +26,7 @@
       "description": "Add username/id of a channel/group",
       "required": false,
       "value": "HeroOfficialBots"
-    }
+    }, 
     "APP_TITLE": {
       "description": "specify a custom app title",
       "required": false
