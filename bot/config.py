@@ -4,14 +4,6 @@ from bot.translation import Translation
 
 load_dotenv("config.env")
 
-    MUST_JOIN = os.environ.get('MUST_JOIN', None)
-    if MUST_JOIN.startswith("@"):
-        MUST_JOIN = MUST_JOIN.replace("@", "")
-else:
-    MUST_JOIN = ""
-    if MUST_JOIN.startswith("@"):
-        MUST_JOIN = MUST_JOIN[1:]
-
 
 class Config:
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
@@ -37,6 +29,14 @@ class Config:
         "created using @HeroOfficialBots"
     )
     
+        MUST_JOIN = os.environ.get('MUST_JOIN', None)
+    if MUST_JOIN.startswith("@"):
+        MUST_JOIN = MUST_JOIN.replace("@", "")
+else:
+    MUST_JOIN = ""
+    if MUST_JOIN.startswith("@"):
+        MUST_JOIN = MUST_JOIN[1:]
+
     FOOTER_TEXT = os.environ.get("FTEXT", "❤️ @SpEcHlDe")
     START_TEXT = os.environ.get("START_TEXT", Translation.START_TEXT)
     AFTER_RECVD_CODE_TEXT = os.environ.get(
